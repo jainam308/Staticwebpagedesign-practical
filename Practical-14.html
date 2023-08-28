@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 14: Check Vowel or Consonant</title>
+    <script>
+        function checkVowelOrConsonant() {
+            const char = document.getElementById("charInput").value.toLowerCase();
+            if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+                document.getElementById("result1").textContent = "Vowel";
+            } else {
+                document.getElementById("result1").textContent = "Consonant";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Task 14: Check Vowel or Consonant using if-else ladder</h1>
+    <input type="text" id="charInput" placeholder="Enter a character">
+    <button onclick="checkVowelOrConsonant()">Check</button>
+    <p id="result1"></p>
+</body>
+</html>

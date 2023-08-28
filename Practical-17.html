@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 17: Calculate Power</title>
+    <script>
+        function calculatePower() {
+            const base = parseFloat(document.getElementById("base").value);
+            const exponent = parseInt(document.getElementById("exponent").value);
+            const result = Math.pow(base, exponent);
+            document.getElementById("powerResult").textContent = `Result: ${result}`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Task 17: Calculate Power of a Given Number</h1>
+    <input type="number" id="base" placeholder="Enter base">
+    <input type="number" id="exponent" placeholder="Enter exponent">
+    <button onclick="calculatePower()">Calculate</button>
+    <p id="powerResult"></p>
+</body>
+</html>

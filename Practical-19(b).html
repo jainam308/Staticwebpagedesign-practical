@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 19b: Check Prime Number</title>
+    <script>
+        function checkPrime() {
+            const num = parseInt(document.getElementById("primeInput").value);
+            let isPrime = true;
+            if (num <= 1) {
+                isPrime = false;
+            } else {
+                for (let i = 2; i <= Math.sqrt(num); i++) {
+                    if (num % i === 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+            }
+            if (isPrime) {
+                document.getElementById("primeResult").textContent = `${num} is a prime number.`;
+            } else {
+                document.getElementById("primeResult").textContent = `${num} is not a prime number.`;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Task 19b: Check if a Given Number is Prime</h1>
+    <input type="number" id="primeInput" placeholder="Enter a number">
+    <button onclick="checkPrime()">Check</button>
+    <p id="primeResult"></p>
+</body>
+</html>

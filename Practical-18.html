@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 18: Multiplication Table</title>
+    <script>
+        function printMultiplicationTable() {
+            const num = parseInt(document.getElementById("multiplicationNum").value);
+            let table = "";
+            for (let i = 1; i <= 10; i++) {
+                table += `${num} x ${i} = ${num * i}<br>`;
+            }
+            document.getElementById("multiplicationTable").innerHTML = table;
+        }
+    </script>
+</head>
+<body>
+    <h1>Task 18: Print Multiplication Table of Given Number</h1>
+    <input type="number" id="multiplicationNum" placeholder="Enter a number">
+    <button onclick="printMultiplicationTable()">Print Table</button>
+    <p id="multiplicationTable"></p>
+</body>
+</html>

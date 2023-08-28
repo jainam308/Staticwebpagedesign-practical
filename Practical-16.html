@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 16: Print First 10 Even Numbers</title>
+    <script>
+        function printEvenNumbers() {
+            let evenNumbers = [];
+            for (let i = 2; evenNumbers.length < 10; i += 2) {
+                evenNumbers.push(i);
+            }
+            document.getElementById("evenNumbers").textContent = evenNumbers.join(", ");
+        }
+    </script>
+</head>
+<body>
+    <h1>Task 16: Print First 10 Even Numbers</h1>
+    <button onclick="printEvenNumbers()">Print Even Numbers</button>
+    <p id="evenNumbers"></p>
+</body>
+</html>

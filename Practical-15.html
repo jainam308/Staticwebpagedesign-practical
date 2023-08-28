@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 15: Check Vowel or Consonant</title>
+    <script>
+        function checkVowelOrConsonantSwitch() {
+            const char = document.getElementById("charInput2").value.toLowerCase();
+            switch (char) {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                    document.getElementById("result2").textContent = "Vowel";
+                    break;
+                default:
+                    document.getElementById("result2").textContent = "Consonant";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Task 15: Check Vowel or Consonant using switch case</h1>
+    <input type="text" id="charInput2" placeholder="Enter a character">
+    <button onclick="checkVowelOrConsonantSwitch()">Check</button>
+    <p id="result2"></p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 19a: Calculate Sum of 1 to n</title>
+    <script>
+        function calculateSum() {
+            const n = parseInt(document.getElementById("sumInput").value);
+            let sum = 0;
+            for (let i = 1; i <= n; i++) {
+                sum += i;
+            }
+            document.getElementById("sumResult").textContent = `Sum: ${sum}`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Task 19a: Calculate Sum of 1 to n</h1>
+    <input type="number" id="sumInput" placeholder="Enter n">
+    <button onclick="calculateSum()">Calculate</button>
+    <p id="sumResult"></p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 20b: Change Background Color</title>
+    <script>
+        function changeBackgroundColor() {
+            const colorSelect = document.getElementById("colorSelect");
+            const selectedColor = colorSelect.options[colorSelect.selectedIndex].value;
+            document.body.style.backgroundColor = selectedColor;
+        }
+    </script>
+</head>
+<body>
+    <h1>Task 20b: Change Background Color of Webpage Using Combo Box</h1>
+    <label for="colorSelect">Select Background Color:</label>
+    <select id="colorSelect">
+        <option value="white">White</option>
+        <option value="lightblue">Light Blue</option>
+        <option value="lightgreen">Light Green</option>
+    </select>
+    <button onclick="changeBackgroundColor()">Change Color</button>
+</body>
+</html>
